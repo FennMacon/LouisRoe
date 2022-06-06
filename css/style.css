@@ -3,16 +3,16 @@
 
 :root {
     --backcolor: #eeeedf;
-    --textcolor: #3a3f66;
+    --textcolor: #5d4060;
     --activecolor: #988A6E;
-    --headercolor: #682924;
+    --headercolor: #ff5400;
     --hovercolor: #5a6d9e;
     --namefont: 'Roboto Mono', monospace;
     --detailfont: 'Roboto Mono', monospace;
     --summaryfont: 'Roboto', sans-serif;
     }
 body {
-    background-color: var(--backcolor);
+  background-image: linear-gradient(to right, white , #ffe9c3 );
     color: var(--textcolor);
     margin-bottom: 100px;
     }
@@ -202,10 +202,5 @@ details[open] summary::-webkit-details-marker {
 @media(min-width: 2000px) {
     details {
         margin: 3rem;
-    }
-}
-@media(min-width: 1600px) {
-    body {
-    background-image: linear-gradient(to right, var(--backcolor) , var(--headercolor));
     }
 }
