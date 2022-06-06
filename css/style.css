@@ -32,7 +32,6 @@ a:hover{
     color: var(--hovercolor);
 }
 img {
-    max-width: 50%;
     height: auto;
     display: flex;
     margin-left: auto;
@@ -89,31 +88,51 @@ details[open] summary::-webkit-details-marker {
 .name:hover{
     cursor: pointer;
 }
-.spriteGallery {
+.gallery {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 4px;
   }
   .col {
     flex: 1;
+    padding: 0 4px;
   }
-  .spriteGallery .col {
+  .gallery .col {
     width: 32%;
   }
+
+
+  .col4 {
+    flex: 1;
+    padding: 0 4px;
+  }
+  .gallery .col4 {
+    width: 24%;
+  }
   
-  .spriteGallery img {
+
+  .col5 {
+    flex: 1;
+    padding: 0 4px;
+  }
+  .gallery .col5 {
+    width: 19%;
+  }
+  
+  .gallery img {
     width: 100%;
   }
   
-  .spriteGallery .item {
+  .gallery .item {
     position: relative;
     overflow: hidden;
   }
   
-  .spriteGallery .item img {
+  .gallery .item img {
     vertical-align: middle;
   }
   
-  .spriteGallery .caption {
+  .gallery .caption {
     margin: 0;
     padding: 1em;
     position: absolute;
